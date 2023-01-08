@@ -15,8 +15,14 @@
                 Login
             </a>
                 
-                <a href="#" class="navlink mx-5 text-decoration-none">Logo</a>
-                <a href="#" class="navlink mx-5 text-decoration-none">Logo</a>
+              <a href="#" class="navlink mx-5 text-decoration-none">
+              <i class="bi bi-person-vcard mx-2"></i> 
+                About
+              </a>
+             <a href="#" class="navlink mx-5 text-decoration-none">
+                <i class="bi bi-telephone mx-2"></i>    
+                Contact
+             </a>
             </div>
        </div>
     </div>
