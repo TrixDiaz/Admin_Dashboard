@@ -20,7 +20,7 @@
      }
      .parallax{
       background-image: url("assets/image/mountain.jpg");
-      min-height: 100vh;
+      min-height: 90vh;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;

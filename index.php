@@ -5,7 +5,7 @@
 <title>Home</title>
 
 
-<nav class="navbar navbar-expand-sm bg-light fixed-top">
+<nav class="navbar navbar-expand-sm py-1 bg-light fixed-top">
   <br>
 <div class="container-fluid">
    <div class="container fixed-top h5">
@@ -39,10 +39,18 @@
 </div>
 </nav>
 
+<section id="home">
+  <div class="parallax">
+      <div class="container">
+          <div class="row">
+            <div class="col">
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
 
-<div class="parallax"></div>
-
-  <div class="container-fluid bg-secondary">
+  <div class="container-fluid bg-light">
     <div class="container">
     <div style="height:300px;">
       <label class="mt-5 h3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, similique 
@@ -52,7 +60,9 @@
     </div>
   </div>
   
-<div class="parallax2"></div>
+<div class="parallax2">
+  
+</div>
 
 <div class="container-fluid bg-light py-5" align="center">
     <div class="container">
