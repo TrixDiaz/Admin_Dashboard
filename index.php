@@ -105,7 +105,7 @@
   </div>
 
 <section id="about">
-    <div class="container-fluid bg-light my-5" align="center">
+    <div class="container-fluid bg-light my-5 py-5" align="center">
              <div class="container text-center">
                   <div>
                       <h1>About Us</h1>
