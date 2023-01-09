@@ -28,7 +28,7 @@
       }
       .parallax2{
       background-image: url("assets/image/nature.jpg");
-      min-height: 60vh;
+      min-height: 50vh;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;

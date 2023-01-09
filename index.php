@@ -40,6 +40,7 @@
               </nav>
             <br>
           <div class="container mt-5">
+            <br>
               <div class="row">
                   <div class="col-4">
                       
@@ -86,6 +87,7 @@
 
   <div class="parallax2">
       <div class="container" align="center">
+        <br><br>
           <div class="col-8">
               <div class="row">
                     <div class="card mt-5 py-4 bg-light bg-opacity-50">
@@ -103,8 +105,8 @@
   </div>
 
 <section id="about">
-    <div class="container-fluid bg-light mx-5 my-5" align="center">
-             <div class="container">
+    <div class="container-fluid bg-light my-5" align="center">
+             <div class="container text-center">
                   <div>
                       <h1>About Us</h1>
                       <h4>Wanna know were it all started?</h4>
