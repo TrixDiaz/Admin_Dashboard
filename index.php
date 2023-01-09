@@ -45,6 +45,23 @@
   </div>
   
 <div class="parallax2"></div>
+
+<div class="container-fluid bg-light py-5" align="center">
+    <div class="container">
+        <section id="about">
+                  <div>
+                      <h1>About Us</h1>
+                      <h4>Wanna know were it all started?</h4>
+                      <p>
+                          Lorem ipsum dolor sit amet consecteturadipisicing elit. Perferendis soluta voluptas eaque, numquam veritatis aperiam expedita deleniti, nesciunt cum alias velit. Cupiditate commodi
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus cum nisi ea optio unde aliquam quia reprehenderit atque eum tenetur! 
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed placeat debitis corporis voluptates modi quibusdam quidem voluptatibus illum, maiores sequi.
+                      </p>
+                  </div>
+          </section>
+    </div>
+</div>
+
 <div class="container-fluid bg-dark py-5">
     <div class="container" align="center">
         <section id="contact">
