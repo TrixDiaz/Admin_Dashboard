@@ -47,8 +47,8 @@
                   <div class="col-4">
                       
                   </div>
-                  <div class="col-8 bg-light mt-5"  style="--bs-bg-opacity: .6;" align="center">
-                     <h5>Sample Admin Dashboard</h5>
+                  <div class="col-8 bg-light mt-5 px-4 py-4"  style="--bs-bg-opacity: .6;" align="center">
+                     <h4>Sample Admin Dashboard</h4>
                     <label>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quia nisi quod aut 
                       itaque iste corrupti, laborum, voluptatum recusandae cumque atque officia sunt numquam odit temporibus est, veritatis totam eveniet
                        officiis magnam dolore? Sed facilis facere, aliquid molestiae nisi saepe optio quidem! Quos aliquam repudiandae quidem! Quo rerum dolore nemo!</label>
@@ -61,9 +61,26 @@
   <div class="container-fluid bg-light">
     <div class="container">
     <div style="height:300px;">
-      <label class="mt-5 h3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, similique 
-        voluptate. Fugit dolorum, provident minima tempora quos dolore ut consequatur quae. Nostrum, 
-        voluptas quam? Excepturi accusantium expedita qui reprehenderit ex.</label>
+       <div class="container mx-5 my-5" align="center">
+          <div class="row">
+            <div class="col-3">
+               <h1><i class="bix bi-bus-front" style="font-size: 150px"></i></h1>
+                <h4><strong>Lorem ipsum dolor sit amet.</strong></h4>
+            </div>
+            <div class="col-3">
+               <h1><i class="bi bi-bank" style="font-size: 150px"></i></h1>
+               <h4><strong>Lorem ipsum dolor sit amet.</strong></h4>
+            </div>
+            <div class="col-3">
+               <h1><i class="bi bi-ticket-perforated" style="font-size: 150px"></i></h1>
+               <h4><strong>Lorem ipsum dolor sit amet.</strong></h4>
+            </div>
+            <div class="col-3">
+              <h1><i class="bi bi-person-vcard" style="font-size: 150px"></i></h1>
+              <h4><strong>Lorem ipsum dolor sit amet.</strong></h4>
+            </div>
+          </div>
+       </div>
       </div>
     </div>
   </div>
