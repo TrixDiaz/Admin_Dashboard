@@ -92,6 +92,7 @@
               <div class="row">
                     <div class="card mt-5 py-4 bg-light bg-opacity-50">
                         <div class="card-body">
+                            <h2>Search</h2>
                             <h4>Search Lorem ipsum dolor sit amet consectetur.</h4>
                             <br>
                             <input type="text" class="form-control w-50" id="search" placeholder="Search ID" name="search"/>
