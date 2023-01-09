@@ -22,11 +22,11 @@
                                 <!-- <i class="bi bi-person-vcard "></i>  -->
                                   Home
                                 </a>
-                              <a href="#" class="navlink mx-3 text-decoration-none">
+                              <a href="#about" class="navlink mx-3 text-decoration-none">
                                 <!-- <i class="bi bi-person-vcard "></i>  -->
                                   About
                                 </a>
-                              <a href="#" class="navlink mx-3 text-decoration-none">
+                              <a href="#contact" class="navlink mx-3 text-decoration-none">
                                   <!-- <i class="bi bi-telephone "></i>     -->
                                   Contact
                               </a>
@@ -89,9 +89,9 @@
   
 </div>
 
-<div class="container-fluid bg-light py-5" align="center">
-    <div class="container">
-        <section id="about">
+<section id="about">
+    <div class="container-fluid bg-light py-5" align="center">
+             <div class="container">
                   <div>
                       <h1>About Us</h1>
                       <h4>Wanna know were it all started?</h4>
@@ -101,13 +101,12 @@
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed placeat debitis corporis voluptates modi quibusdam quidem voluptatibus illum, maiores sequi.
                       </p>
                   </div>
-          </section>
+             </div>
     </div>
-</div>
-
+</section>
+<section id="contact">
 <div class="container-fluid bg-dark py-5">
     <div class="container" align="center">
-        <section id="contact">
                   <div id="contact-form">
                       <h1 class="text-white">Contact Us</h1>
                       <form action="">
@@ -125,10 +124,10 @@
                           </div>
                           <div></div>
                       </form>
-                  </div>
-              </section>
-    </div>
-</div>
+                  </div>       
+            </div>
+      </div>
+</section>
 <?php include './assets/partials/_footer.php'; ?>
 <?php include './assets/partials/_loginModal.php'; ?>
 <?php include './assets/scripts/index.php' ?>
