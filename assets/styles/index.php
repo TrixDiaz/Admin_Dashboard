@@ -2,9 +2,11 @@
     *{
         font-family:Georgia, 'Times New Roman', Times, serif';
      }
+     .navlink{
+      color: black;
+     }
      .navlink:hover{
-        color:black;
-        font-size: 17px;
+        color: whitesmoke;
         cursor: pointer;
      }
      .signUp{
@@ -13,4 +15,23 @@
      .signUp:hover{
         cursor: pointer;
      }
+     .topnav{
+      background-color: whitesmoke;
+     }
+     .parallax{
+      background-image: url("assets/image/mountain.jpg");
+      min-height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .parallax2{
+      background-image: url("assets/image/nature.jpg");
+      min-height: 60vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
 </style>

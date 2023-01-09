@@ -14,16 +14,16 @@
                             <label class="signUp float-end">Need an Account?<a href="#" class="text-decoration-none mx-2">SignUp</a></label>
                             <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
                         </div>
-                        <div class="mb-2">
+                        <div class="">
                             <label for="pwd" class="form-label">Password:</label>
                             <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
                         </div>
                     </div>
-                    <div class="mb-2" align="center">
+                    <div class="" align="center">
                         <a href="#" class="signUp text-decoration-none text-dark">Forgot Password?</a>
                     </div>
                     <hr>
-                        <div class="row mx-3" align="end">
+                        <div class="row mx-2" align="end">
                             <div class="col mb-3">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-primary">Login</button>
