@@ -3,8 +3,12 @@
  include './assets/styles/index.php';
 ?>
 <title>Home</title>
+
+
+<nav class="navbar navbar-expand-sm bg-light fixed-top">
+  <br>
 <div class="container-fluid">
-    <div class="container fixed-top h5">
+   <div class="container fixed-top h5">
        <div class="row my-1 ">
             <div class="col" align="start">
                 <a href="#" class="navlink mx-5 text-decoration-none">Logo</a>
@@ -31,7 +35,11 @@
             </div>
        </div>
     </div>
+  
 </div>
+</nav>
+
+
 <div class="parallax"></div>
 
   <div class="container-fluid bg-secondary">

@@ -6,7 +6,7 @@
       color: black;
      }
      .navlink:hover{
-        color: whitesmoke;
+        color: mediumaquamarine;
         cursor: pointer;
      }
      .signUp{
