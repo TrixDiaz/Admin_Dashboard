@@ -5,49 +5,57 @@
 <title>Home</title>
 
 
-<nav class="navbar navbar-expand-sm py-1 bg-light fixed-top">
-  <br>
-<div class="container-fluid">
-   <div class="container fixed-top h5">
-       <div class="row my-1 ">
-            <div class="col" align="start">
-                <a href="#" class="navlink mx-5 text-decoration-none">Logo</a>
-            </div>
-            <div class="col" align="center">
-            <a href="#" class="navlink mx-4 text-decoration-none">
-              <!-- <i class="bi bi-person-vcard "></i>  -->
-                Home
-              </a>
-            <a href="#" class="navlink mx-4 text-decoration-none">
-              <!-- <i class="bi bi-person-vcard "></i>  -->
-                About
-              </a>
-             <a href="#" class="navlink mx-4 text-decoration-none">
-                <!-- <i class="bi bi-telephone "></i>     -->
-                Contact
-             </a>
-            </div>
-            <div class="col" align="end">
-            <a href="#" class="navlink mx-4 text-decoration-none" data-bs-toggle="modal" data-bs-target="#myModal"> 
-                <i class="bi bi-box-arrow-in-right "></i>
-                Login
-            </a>
-            </div>
-       </div>
-    </div>
-  
-</div>
-</nav>
+
 
 <section id="home">
-  <div class="parallax">
-      <div class="container">
-          <div class="row">
-            <div class="col">
-            </div>
+    <div class="parallax">
+          <nav class="navbar navbar-expand-sm py-1 bg-light fixed-top">
+            <br>
+                  <div class="container-fluid">
+                    <div class="container fixed-top h5">
+                        <div class="row my-1 ">
+                              <div class="col" align="start">
+                                  <a href="#" class="navlink mx-3 text-decoration-none">Logo</a>
+                              </div>
+                              <div class="col" align="center">
+                              <a href="#" class="navlink mx-3 text-decoration-none">
+                                <!-- <i class="bi bi-person-vcard "></i>  -->
+                                  Home
+                                </a>
+                              <a href="#" class="navlink mx-3 text-decoration-none">
+                                <!-- <i class="bi bi-person-vcard "></i>  -->
+                                  About
+                                </a>
+                              <a href="#" class="navlink mx-3 text-decoration-none">
+                                  <!-- <i class="bi bi-telephone "></i>     -->
+                                  Contact
+                              </a>
+                              </div>
+                              <div class="col" align="end">
+                              <a href="#" class="navlink mx-3 text-decoration-none" data-bs-toggle="modal" data-bs-target="#myModal"> 
+                                  <i class="bi bi-box-arrow-in-right "></i>
+                                  Login
+                              </a>
+                              </div>
+                        </div>
+                      </div>
+                  </div>
+              </nav>
+            <br>
+          <div class="container mt-5">
+              <div class="row">
+                  <div class="col-4">
+                      
+                  </div>
+                  <div class="col-8 bg-light mt-5"  style="--bs-bg-opacity: .6;" align="center">
+                     <h5>Sample Admin Dashboard</h5>
+                    <label>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quia nisi quod aut 
+                      itaque iste corrupti, laborum, voluptatum recusandae cumque atque officia sunt numquam odit temporibus est, veritatis totam eveniet
+                       officiis magnam dolore? Sed facilis facere, aliquid molestiae nisi saepe optio quidem! Quos aliquam repudiandae quidem! Quo rerum dolore nemo!</label>
+                  </div>
+              </div>
           </div>
       </div>
-  </div>
 </section>
 
   <div class="container-fluid bg-light">
