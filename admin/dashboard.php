@@ -3,6 +3,7 @@ require '../assets/partials/_admin-check.php';
  include '../assets/partials/_functions.php';
  include '../assets/partials/_head.php';
 ?>
+<title>Admin | Dashboard</title>
 <div class="container-fluid">
     <div class="row flex-nowrap">
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
