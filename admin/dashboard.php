@@ -2,8 +2,7 @@
 require '../assets/partials/_admin-check.php';
  include '../assets/partials/_functions.php';
  include '../assets/partials/_head.php';
-include '../assets/partials/_sidebar.php';
-include '../assets/styles/admin-sidebar.php';
+ include '../assets/partials/_sidebar.php';
 ?>
 <!-- sidebar main content  -->
 <div class="col py-3">
@@ -20,4 +19,8 @@ include '../assets/styles/admin-sidebar.php';
 <!-- sidebar end div  -->
     </div> 
 </div>
-<?php include '../assets/partials/_foot.php'; ?>
+
+<?php 
+include '../assets/scripts/index.php';
+include '../assets/partials/_foot.php'; 
+?>

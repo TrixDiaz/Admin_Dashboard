@@ -1,3 +1,4 @@
+<?php  include '../assets/styles/admin-sidebar.php'; ?> 
 <title>Admin | Dashboard</title>
 
 <div class="container-fluid">
