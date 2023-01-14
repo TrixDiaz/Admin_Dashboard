@@ -12,11 +12,11 @@
                     <div class="mb-2 mt-2">
                             <label for="text" class="form-label">Username:</label>
                             <label class="signUp float-end">Need an Account?<a href="#" class="text-decoration-none mx-2">SignUp</a></label>
-                            <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username">
+                            <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username" required>
                         </div>
                         <div class="">
                             <label for="password" class="form-label">Password:</label>
-                            <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+                            <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
                         </div>
                     </div>
                     <div class="" align="center">

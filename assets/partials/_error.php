@@ -489,7 +489,7 @@ button {
   }
 }
 @media (max-width: 750px) {
-  body, html, {
+  body, html{
     max-height: 100vh;
   }
    .error__content {
@@ -539,6 +539,8 @@ button {
 </style>
 
    <body>
+
+   
    <a href="https://codepen.io/uiswarup/full/yLzypyY" target="_blank">
   <header class="top-header">
 </header>

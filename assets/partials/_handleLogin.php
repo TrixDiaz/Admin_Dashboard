@@ -1,20 +1,15 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <title>Error</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta http-equiv = "refresh" content = "0; url = _error.php" />
-   </head>
-</html>
 <?php
     require '_functions.php';
     $conn = db_connect();
+
+    $empty = "Fill all the fields.";
 
     if(!$conn)
         die("Oh Shoot!! Connection Failed");
 
     if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"]))
     {
+        
         $username = $_POST['username'];
         $password = $_POST['password'];
 
@@ -34,14 +29,21 @@
                 header("location: ../../admin/dashboard.php");
                 exit;
             }
-            else
-            {
+                
                  // Login failure
                  $error = true;
                  header("location: _error.php?error=$error");
                  exit;
-            }   
+               
             
         }
     }
 ?>
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Error</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv = "refresh" content = "0; url = _error.php"/>
+   </head>
+</html>
