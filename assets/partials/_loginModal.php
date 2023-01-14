@@ -1,6 +1,6 @@
 
 <div class="container mt-5">
-        <form>
+        <form action="assets/partials/_handleLogin.php" method="POST">
             <div class="modal fade" tabindex="-1" id="myModal">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -10,13 +10,13 @@
                     </div>
                     <div class="modal-body">
                     <div class="mb-2 mt-2">
-                            <label for="email" class="form-label">Email:</label>
+                            <label for="text" class="form-label">Username:</label>
                             <label class="signUp float-end">Need an Account?<a href="#" class="text-decoration-none mx-2">SignUp</a></label>
-                            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                            <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username">
                         </div>
                         <div class="">
-                            <label for="pwd" class="form-label">Password:</label>
-                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                            <label for="password" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
                         </div>
                     </div>
                     <div class="" align="center">
@@ -26,7 +26,7 @@
                         <div class="row mx-2" align="end">
                             <div class="col mb-3">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Login</button>
+                            <button type="submit" class="btn btn-primary" name="login">Login</button>
                             </div>
                         </div>
                     </div>

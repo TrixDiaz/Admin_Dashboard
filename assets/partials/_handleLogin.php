@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Error</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv = "refresh" content = "0; url = _error.php" />
+   </head>
+</html>
 <?php
     require '_functions.php';
     $conn = db_connect();
@@ -5,7 +13,7 @@
     if(!$conn)
         die("Oh Shoot!! Connection Failed");
 
-    if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"]))
+    if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"]))
     {
         $username = $_POST['username'];
         $password = $_POST['password'];
@@ -13,7 +21,8 @@
         $sql = "SELECT * FROM `users` WHERE user_name='$username';";
         $result = mysqli_query($conn, $sql);
 
-        if($row = mysqli_fetch_assoc($result)){
+        if($row = mysqli_fetch_assoc($result))
+        {
             $hash = $row['user_password'];
             if(password_verify($password, $hash))
             {
@@ -22,13 +31,17 @@
                 $_SESSION["loggedIn"] = true;
                 $user = $_SESSION["user_id"] = $row["user_id"];
 
-                header("location: ../../admin/dashboard.php?id=$user");
+                header("location: ../../admin/dashboard.php");
                 exit;
             }
+            else
+            {
+                 // Login failure
+                 $error = true;
+                 header("location: _error.php?error=$error");
+                 exit;
+            }   
             
-            // Login failure
-            $error = true;
-            header("location: index.php?error=$error");
         }
     }
 ?>
