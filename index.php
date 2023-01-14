@@ -57,24 +57,24 @@
       </div>
 </section>
 
-  <div class="container-fluid bg-light">
-      <div class="container">
-          <div style="height:300px;">
-                <div class="container mx-5 my-5" align="center">
+  <div class="container-fluid bg-light" align="center">
+      <div style="min-height: 20vh;">
+          <div class="container">
+                <div class="container md-mx-5 md-my-5">
                       <div class="row">
-                          <div class="col-3">
+                          <div class="col-auto col-md-3 col-xl-3 sm-mx-5">
                             <h1><i class="bix bi-bus-front" style="font-size: 150px"></i></h1>
                               <h4><strong>Lorem ipsum dolor sit amet.</strong></h4>
                           </div>
-                          <div class="col-3">
+                          <div class="col-auto col-md-3 col-xl-3 sm-mx-5">
                             <h1><i class="bi bi-bank" style="font-size: 150px"></i></h1>
                             <h4><strong>Lorem ipsum dolor sit amet.</strong></h4>
                           </div>
-                          <div class="col-3">
+                          <div class="col-auto col-md-3 col-xl-3 sm-mx-5">
                             <h1><i class="bi bi-ticket-perforated" style="font-size: 150px"></i></h1>
                             <h4><strong>Lorem ipsum dolor sit amet.</strong></h4>
                           </div>
-                          <div class="col-3">
+                          <div class="col-auto col-md-3 col-xl-3 sm-mx-5">
                             <h1><i class="bi bi-person-vcard" style="font-size: 150px"></i></h1>
                             <h4><strong>Lorem ipsum dolor sit amet.</strong></h4>
                           </div>
