@@ -3,6 +3,7 @@ require '../assets/partials/_admin-check.php';
  include '../assets/partials/_functions.php';
  include '../assets/partials/_head.php';
 include '../assets/partials/_sidebar.php';
+include '../assets/styles/admin-sidebar.php';
 ?>
 <!-- sidebar main content  -->
 <div class="col py-3">
