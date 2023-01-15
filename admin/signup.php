@@ -10,11 +10,11 @@ require '../assets/partials/_admin-check.php';
             <h3 class="mb-3">ADD NEW ADMIN</h3>
 <section  id="add-admin">
         <div class="container-fluid">
-                <div class="container w-50" id="signupForm">
-                    <br><br><br><br><br>
+                <div class="container" id="signupForm">
+                    <br><br><br>
                     <form action="../assets/partials/_handleSignup.php" method="POST">
-                    <div class="card shadow mb-3">
-                                <div class="card-body" align="center">
+                    <div class="card shadow mb-3 py-3">
+                                <div class="card-body mx-5 py-5" align="center">
                                     <div class="h4 py-3">CREATE ACCOUNT</div>
                                     <div class="row d-flex justify-content-around">
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-0 mb-4">
@@ -38,7 +38,7 @@ require '../assets/partials/_admin-check.php';
                                                 <span id="passwordErr" class="error"></span>
                                             </div>
 
-                                            <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">
+                                            <div class="col-auto col-sm-10 col-md-8 col-xl-6 mx-sm-4 mb-4">
                                             <button id="signup-btn" type="submit" name="signup" class="btn btn-success w-50">SIGNUP</button>
                                             </div>
                                             
@@ -49,7 +49,7 @@ require '../assets/partials/_admin-check.php';
                 </div>
         </div>
 </section>
-<br><br><br><br><br>
+<br><br><br>
             <?php include '../assets/partials/_footer.php'; ?>
 </div>
 <!-- sidebar end div  -->
