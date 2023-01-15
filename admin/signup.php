@@ -9,15 +9,16 @@ require '../assets/partials/_admin-check.php';
 <div class="col py-3">
             <h3 class="mb-3">ADD NEW ADMIN</h3>
 <section  id="add-admin">
-        <div class="container-fluid ">
+        <div class="container-fluid">
                 <div class="container w-50" id="signupForm">
+                    <br><br><br><br><br>
                     <form action="../assets/partials/_handleSignup.php" method="POST">
-                    <div class="card shadow mb-4">
+                    <div class="card shadow mb-3">
                                 <div class="card-body" align="center">
                                     <div class="h4 py-3">CREATE ACCOUNT</div>
                                     <div class="row d-flex justify-content-around">
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-0 mb-4">
-                                                <input type="text" class="form-control" name="fisrtName" placeholder="First Name*">
+                                                <input type="text" class="form-control" name="firstName" placeholder="First Name*">
                                             </div>
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-0 mb-4">
                                                 <input type="text" class="form-control" name="lastName" placeholder="Last Name*">
@@ -48,7 +49,7 @@ require '../assets/partials/_admin-check.php';
                 </div>
         </div>
 </section>
-
+<br><br><br><br><br>
             <?php include '../assets/partials/_footer.php'; ?>
 </div>
 <!-- sidebar end div  -->

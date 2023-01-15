@@ -29,10 +29,14 @@
             
             if($result)
                 $signup_sucess = true;
+            header("location: ");
         }
-
-        // Redirect Page
+        else
+        {
+             // Redirect Page
         header("location: ../admin/signup.php?signup=$signup_sucess&user_exists=$user_exists");
+        }
+       
     }
 
 ?>
