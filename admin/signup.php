@@ -8,6 +8,30 @@ require '../assets/partials/_admin-check.php';
 <!-- sidebar main content  -->
 <div class="col py-3">
             <h3 class="mb-3">ADD NEW ADMIN</h3>
+            
+            
+            <?php if (isset($_GET['error'])) { ?>
+                <div class="container">
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert"> 
+                     <?php echo $_GET['error']; ?>  
+                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+            <?php } ?>
+
+            <?php if (isset($_GET['success'])) { ?>
+                <div class="container">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert"> 
+                     <?php echo $_GET['success']; ?>  
+                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+            <?php } ?>
+          
+           
+           
+
+          
 <section  id="add-admin">
         <div class="container-fluid">
                 <div class="container mg-5" id="signupForm">
