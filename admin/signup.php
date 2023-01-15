@@ -7,38 +7,46 @@ require '../assets/partials/_admin-check.php';
 
 <!-- sidebar main content  -->
 <div class="col py-3">
-            <h3>Left Sidebar with Submenus</h3>
-            <p class="lead">
-                An example 2-level sidebar with collasible menu items. The menu functions like an "accordion" where only a single 
-                menu is be open at a time. While the sidebar itself is not toggle-able, it does responsively shrink in width on smaller screens.</p>
-            <ul class="list-unstyled">
-                <li><h5>Responsive</h5> shrinks in width, hides text labels and collapses to icons only on mobile</li>
-            </ul>
+            <h3 class="mb-3">ADD NEW ADMIN</h3>
+<section  id="add-admin">
+        <div class="container-fluid ">
+                <div class="container w-50" id="signupForm">
+                    <form action="../assets/partials/_handleSignup.php" method="POST">
+                    <div class="card shadow mb-4">
+                                <div class="card-body" align="center">
+                                    <div class="h4 py-3">CREATE ACCOUNT</div>
+                                    <div class="row d-flex justify-content-around">
+                                            <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-0 mb-4">
+                                                <input type="text" class="form-control" name="fisrtName" placeholder="First Name*">
+                                            </div>
+                                            <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-0 mb-4">
+                                                <input type="text" class="form-control" name="lastName" placeholder="Last Name*">
+                                            </div>
+                                            
+                                            <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">
+                                                <input type="text" class="form-control" name="username" placeholder="Username*">
+                                            </div>
 
-<section id="add-admin">
-                <div>
-                    <div id="signupForm">
-                        <h2>ADD NEW ADMIN</h2>
-                        <form action="../assets/partials/_handleSignup.php" method="POST">
-                            <div>
-                                <input type="text" name="firstName" placeholder="First Name*">
-                                <input type="text" name="lastName" placeholder="Last Name*" required>
-                            </div>
-                            <div>
-                                <input type="text" name="username" placeholder="Username*" required>
-                            </div>
-                            <div>
-                                <input id="password" type="password" name="password" placeholder="Password*" required>
-                                <span id="passwordErr" class="error"></span>
-                            </div>
-                            <div>
-                                <input id="confPassword" type="password" name="confPassword" placeholder="Confirm Password*" required>
-                                <span id="confPassErr" class="error"></span>
-                            </div>
-                            <button id="signup-btn" type="submit" name="signup">PROCEED</button>
-                        </form>
-                    </div>
+                                            <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">
+                                                <input type="password" class="form-control" name="password" placeholder="Password*">
+                                                <span id="passwordErr" class="error"></span>
+                                            </div>
+
+                                            <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">
+                                                <input type="password" class="form-control" name="confirmpassword" placeholder="Confirm Password*">
+                                                <span id="passwordErr" class="error"></span>
+                                            </div>
+
+                                            <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">
+                                            <button id="signup-btn" type="submit" name="signup" class="btn btn-success w-50">SIGNUP</button>
+                                            </div>
+                                            
+                                    </div>
+                                </div>
+                          </div>
+                    </form>
                 </div>
+        </div>
 </section>
 
             <?php include '../assets/partials/_footer.php'; ?>
