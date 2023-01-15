@@ -10,8 +10,7 @@ require '../assets/partials/_admin-check.php';
             <h3 class="mb-3">ADD NEW ADMIN</h3>
 <section  id="add-admin">
         <div class="container-fluid">
-                <div class="container" id="signupForm">
-                    <br><br><br>
+                <div class="container mg-5" id="signupForm">
                     <form action="../assets/partials/_handleSignup.php" method="POST">
                     <div class="card shadow mb-3 py-3">
                                 <div class="card-body mx-5 py-5" align="center">
@@ -49,7 +48,6 @@ require '../assets/partials/_admin-check.php';
                 </div>
         </div>
 </section>
-<br><br><br>
             <?php include '../assets/partials/_footer.php'; ?>
 </div>
 <!-- sidebar end div  -->

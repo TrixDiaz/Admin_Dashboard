@@ -29,12 +29,12 @@
             
             if($result)
                 $signup_sucess = true;
-            header("location: ");
+         $success = header("location: admin/signup.php?success=$success");
         }
         else
         {
              // Redirect Page
-        header("location: ../admin/signup.php?signup=$signup_sucess&user_exists=$user_exists");
+        $exist =  header("location: ../../admin/signup.php?signup=error");
         }
        
     }
