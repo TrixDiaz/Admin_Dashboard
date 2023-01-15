@@ -38,7 +38,7 @@ require '../assets/partials/_admin-check.php';
                                                 <span id="passwordErr" class="error"></span>
                                             </div>
 
-                                            <div class="col-auto col-sm-10 col-md-8 col-xl-6 mx-sm-4 mb-4">
+                                            <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">
                                             <button id="signup-btn" type="submit" name="signup" class="btn btn-success w-50">SIGNUP</button>
                                             </div>
                                             
