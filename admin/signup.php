@@ -7,7 +7,12 @@ require '../assets/partials/_admin-check.php';
 
 <!-- sidebar main content  -->
 <div class="col py-3">
-            <h3 class="mb-3">ADD NEW ADMIN</h3>
+    <nav>
+        <div class="d-flex justify-content-between mb-3">
+        <div class="h3">Register New Account</div>
+        <a href="../admin/signup.php" class="btn btn-info h3"><i class="bi bi-arrow-clockwise"></i></a>
+        </div>
+    </nav>
             
             
             <?php if (isset($_GET['error'])) { ?>
@@ -41,23 +46,23 @@ require '../assets/partials/_admin-check.php';
                                     <div class="h4 py-3">CREATE ACCOUNT</div>
                                     <div class="row d-flex justify-content-around">
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-0 mb-4">
-                                                <input type="text" class="form-control" name="firstName" placeholder="First Name*">
+                                                <input type="text" class="form-control" name="firstName" placeholder="First Name*" required>
                                             </div>
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-0 mb-4">
-                                                <input type="text" class="form-control" name="lastName" placeholder="Last Name*">
+                                                <input type="text" class="form-control" name="lastName" placeholder="Last Name*" required>
                                             </div>
                                             
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">
-                                                <input type="text" class="form-control" name="username" placeholder="Username*">
+                                                <input type="text" class="form-control" name="username" placeholder="Username*" required>
                                             </div>
 
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">
-                                                <input type="password" class="form-control" name="password" placeholder="Password*">
+                                                <input type="password" class="form-control" name="password" placeholder="Password*" required>
                                                 <span id="password" class="error"></span>
                                             </div>
 
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">
-                                                <input type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password*">
+                                                <input type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password*" required>
                                                 <span id="password" class="error"></span>
                                             </div>
 

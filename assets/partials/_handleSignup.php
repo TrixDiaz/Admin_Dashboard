@@ -23,9 +23,9 @@
         $signup_sucess = false;
 
         if($_POST["password"] != $_POST["password_confirmation"])
-            {
+        {
                 header("location: ../../admin/signup.php?error=Password does not match!");
-            }
+        }
         elseif(!$user_exists)
         {
             $hash = password_hash($password, PASSWORD_DEFAULT);
@@ -37,6 +37,7 @@
             {
                 $signup_sucess = true;
                 header("location: ../../admin/signup.php?success=Account Successfully Created!");
+               
             }
         }
         

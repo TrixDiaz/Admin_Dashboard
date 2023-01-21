@@ -26,7 +26,7 @@
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                </div>
                                <div class="col-auto">
-                               <span class="badge bg-info">Admin</span>
+                               <span class="badge bg-info text-uppercase">Admin</span>
                                </div>
                             </div>
                         </div>
