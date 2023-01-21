@@ -12,7 +12,7 @@ require '../assets/partials/_admin-check.php';
             
             <?php if (isset($_GET['error'])) { ?>
                 <div class="container">
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert"> 
+                    <div x-transition.leave.duration.800ms x-data="{show : true}" x-show="show" x-init="setTimeout(()=> show = false, 3000)" class="alert alert-danger alert-dismissible fade show" role="alert"> 
                      <?php echo $_GET['error']; ?>  
                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
@@ -21,7 +21,7 @@ require '../assets/partials/_admin-check.php';
 
             <?php if (isset($_GET['success'])) { ?>
                 <div class="container">
-                    <div class="alert alert-success alert-dismissible fade show" role="alert"> 
+                    <div x-transition.leave.duration.800ms x-data="{show : true}" x-show="show" x-init="setTimeout(()=> show = false, 3000)"class="alert alert-success alert-dismissible fade show" role="alert"> 
                      <?php echo $_GET['success']; ?>  
                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
