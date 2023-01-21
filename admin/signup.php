@@ -2,7 +2,7 @@
 require '../assets/partials/_admin-check.php';
  include '../assets/partials/_functions.php';
  include '../assets/partials/_head.php';
- include '../assets/partials/_sidebar.php';
+ include '../admin/sidebar.php';
 ?>
 
 <!-- sidebar main content  -->
@@ -64,6 +64,8 @@ require '../assets/partials/_admin-check.php';
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">
                                             <button id="signup-btn" type="submit" name="signup" class="btn btn-success w-50">SIGNUP</button>
                                             </div>
+
+                                            <input type="text" id="role" name="role" value="admin" hidden>
                                             
                                     </div>
                                 </div>

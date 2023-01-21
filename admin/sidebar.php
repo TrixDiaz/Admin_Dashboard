@@ -1,4 +1,7 @@
-<?php  include '../assets/styles/admin-sidebar.php'; ?> 
+<?php
+  include '../assets/styles/admin-sidebar.php';
+  include '../admin/profileModal.php';
+ ?> 
 <title>Admin | Dashboard</title>
 
 <div class="container-fluid">
@@ -75,8 +78,7 @@
                         <span class="d-none d-sm-inline mx-1">loser</span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Profile</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
