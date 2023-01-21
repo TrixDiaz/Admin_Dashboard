@@ -12,7 +12,7 @@ require '../assets/partials/_admin-check.php';
             
             <?php if (isset($_GET['error'])) { ?>
                 <div class="container">
-                    <div x-transition.leave.duration.800ms x-data="{show : true}" x-show="show" x-init="setTimeout(()=> show = false, 3000)" class="alert alert-danger alert-dismissible fade show" role="alert"> 
+                    <div x-transition.leave.duration.800ms x-data="{show : true}" x-show="show" x-init="setTimeout(()=> show = false, 3000)"class="alert alert-danger alert-dismissible fade show" role="alert"> 
                      <?php echo $_GET['error']; ?>  
                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
@@ -53,12 +53,12 @@ require '../assets/partials/_admin-check.php';
 
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">
                                                 <input type="password" class="form-control" name="password" placeholder="Password*">
-                                                <span id="passwordErr" class="error"></span>
+                                                <span id="password" class="error"></span>
                                             </div>
 
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">
-                                                <input type="password" class="form-control" name="confirmpassword" placeholder="Confirm Password*">
-                                                <span id="passwordErr" class="error"></span>
+                                                <input type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password*">
+                                                <span id="password" class="error"></span>
                                             </div>
 
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">

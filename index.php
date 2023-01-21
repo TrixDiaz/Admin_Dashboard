@@ -1,6 +1,7 @@
 <?php 
  include './assets/partials/_head.php';
  include './assets/styles/index.php';
+ include './user/RegisterModal.php';
 ?>
   <title>Home</title>
 

@@ -14,26 +14,34 @@
 
         $fullName = $_POST["firstName"] . " " . $_POST["lastName"];
         $username = $_POST["username"];
-        $password = $_POST["password"]; 
+        $password = $_POST["password"];
+        $password_confirmation = $_POST["password_confirmation"];  
+        $role = $_POST['role'];
 
         // Check if the username already exists
         $user_exists = exist_user($conn, $username);
         $signup_sucess = false;
 
-        if(!$user_exists)
+        if($_POST["password"] != $_POST["password_confirmation"])
+            {
+                header("location: ../../admin/signup.php?error=Password does not match!");
+            }
+        elseif(!$user_exists)
         {
             $hash = password_hash($password, PASSWORD_DEFAULT);
-            $sql = "INSERT INTO `users` (`user_name`, `user_fullname`, `user_password`, `user_created`) VALUES ('$username', '$fullName', '$hash', current_timestamp());";
+            $sql = "INSERT INTO `users` (`user_name`, `user_fullname`, `user_password`, `role`, `user_created`) VALUES ('$username', '$fullName', '$hash', '$role',current_timestamp());";
 
             $result = mysqli_query($conn, $sql);
             
             if($result)
+            {
                 $signup_sucess = true;
-        header("location: ../../admin/signup.php?success=Account Successfully Created!");
+                header("location: ../../admin/signup.php?success=Account Successfully Created!");
+            }
         }
+        
         else
         {
-             // Redirect Page
         header("location: ../../admin/signup.php?error=Account is already Exist!");
         }
        
