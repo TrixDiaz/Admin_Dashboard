@@ -1,10 +1,25 @@
 <?php 
  include './assets/partials/_head.php';
  include './assets/styles/index.php';
- include './user/RegisterModal.php';
+ include './assets/user-partials/_registerModal.php';
 ?>
   <title>Home</title>
+  
+                     <?php if (isset($_GET['error'])) { ?>
+                              <div class="container">
+                              <div x-transition.leave.duration.800ms x-data="{show : true}" x-show="show" x-init="setTimeout(()=> show = false, 3000)" class="alert alert-danger alert-dismissible fade show position-absolute top-1 end-0 mx-3 mt-5" role="alert">
+                              <i class="bi bi-info-circle"><span>&nbsp;<?php echo $_GET['error']; ?> </span> </i>  
+                               </div>
+                              </div>
+                          <?php } ?>
 
+                          <?php if (isset($_GET['success'])) { ?>
+                              <div class="container">
+                                  <div x-transition.leave.duration.800ms x-data="{show : true}" x-show="show" x-init="setTimeout(()=> show = false, 3000)"class="alert alert-success alert-dismissible fade show position-absolute top-1 end-0 mx-3 mt-5" role="alert"> 
+                                  <i class="bi bi-info-circle"><span>&nbsp;<?php echo $_GET['success']; ?> </span> </i>  
+                                  </div>
+                              </div>
+                    <?php } ?>
 <section id="home">
     <div class="parallax">
           <nav class="navbar navbar-expand-sm py-1 bg-light fixed-top">

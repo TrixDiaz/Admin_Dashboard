@@ -44,17 +44,27 @@ require '../assets/partials/_admin-check.php';
                     <form action="../assets/partials/_handleSignup.php" method="POST">
                     <div class="card shadow mb-3 py-3">
                                 <div class="card-body mx-5 py-5" align="center">
-                                    <div class="h4 py-3">CREATE ACCOUNT</div>
+                                    <div class="d-flex justify-content-around mb-3">
+                                        <div class="mx-5" disabled></div>
+                                        <div class="h3">CREATE ACCOUNT</div>
+                                        <div class="">
+                                        <select class="form-select text-uppercase" name="role">
+                                           <li><option selected>USER ROLE</option></option></li>
+                                           <li><option value="ADMIN">ADMIN</option></li>
+                                           <li><option value="USER">USER</option></li>
+                                        </select>
+                                    </div>
+                                    </div>
                                     <div class="row d-flex justify-content-around">
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-0 mb-4">
-                                                <input type="text" class="form-control" name="firstName" placeholder="First Name*" required>
+                                                <input type="text" class="form-control text-uppercase" name="firstName" placeholder="First Name*" required>
                                             </div>
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-0 mb-4">
-                                                <input type="text" class="form-control" name="lastName" placeholder="Last Name*" required>
+                                                <input type="text" class="form-control text-uppercase" name="lastName" placeholder="Last Name*" required>
                                             </div>
                                             
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">
-                                                <input type="text" class="form-control" name="username" placeholder="Username*" required>
+                                                <input type="text" class="form-control text-uppercase" name="username" placeholder="Username*" required>
                                             </div>
 
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">
@@ -70,9 +80,6 @@ require '../assets/partials/_admin-check.php';
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">
                                             <button id="signup-btn" type="submit" name="signup" class="btn btn-success w-50">SIGNUP</button>
                                             </div>
-
-                                            <input type="text" id="role" name="role" value="admin" hidden>
-                                            
                                     </div>
                                 </div>
                           </div>
