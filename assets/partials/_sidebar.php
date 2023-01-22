@@ -1,8 +1,9 @@
 <?php
   include '../assets/styles/admin-sidebar.php';
-  include '../admin/profileModal.php';
+  include '../assets/partials/_profileModal.php';
+  include '../assets/partials/_urlName.php';
  ?> 
-<title>Admin | Dashboard</title>
+
 
 <div class="container-fluid">
    
@@ -75,7 +76,7 @@
                 <div class="dropdown pb-4">
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="https://pbs.twimg.com/media/DW5LJ7LW4AAMC70.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
-                        <span class="d-none d-sm-inline mx-1">loser</span>
+                        <span class="d-none d-sm-inline mx-1"><?php echo $result['user_name']; ?></span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
                         <li><a class="dropdown-item" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Profile</a></li>

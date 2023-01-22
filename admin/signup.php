@@ -2,7 +2,8 @@
 require '../assets/partials/_admin-check.php';
  include '../assets/partials/_functions.php';
  include '../assets/partials/_head.php';
- include '../admin/sidebar.php';
+ include '../assets/partials/_sidebar.php';
+ include '../assets/partials/_urlName.php';
 ?>
 
 <!-- sidebar main content  -->

@@ -1,3 +1,7 @@
+
+<?php
+ include '../assets/partials/_urlName.php';
+?>
 <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -10,7 +14,7 @@
                         <div class="card-body">
                             <div class="card-text">
                                <div class="col-auto">
-                                    <strong><h4>Full name</h4></strong>
+                                    <strong><h4><?php echo $result['user_fullname']; ?></h4></strong>
                                </div>
                                <div class="col-auto mb-2">
                                         <div class="row">
@@ -26,18 +30,20 @@
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                </div>
                                <div class="col-auto">
-                               <span class="badge bg-info text-uppercase">Admin</span>
+                               <span class="badge bg-info text-uppercase"><?php echo $result['role']; ?></span>
                                </div>
                             </div>
                         </div>
                     </div>
       </div>
       <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Update Profile</button>
         <button class="btn btn-warning" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Change Password</button>
       </div>
     </div>
   </div>
 </div>
+
 <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -51,6 +57,24 @@
       <div class="modal-footer">
         <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
         <button class="btn btn-success" type="submit" name="changePass">Change Password</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Update Profile</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+            Display Here for the Update Profile
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+        <button class="btn btn-success" type="submit" name="changePass">Update Profile</button>
       </div>
     </div>
   </div>

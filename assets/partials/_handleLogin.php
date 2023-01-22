@@ -26,7 +26,7 @@
                 $_SESSION["loggedIn"] = true;
                 $user = $_SESSION["user_id"] = $row["user_id"];
 
-                header("location: ../../admin/dashboard.php");
+                header("location: ../../admin/dashboard.php?id=$user");
                 exit;
             }
                 
