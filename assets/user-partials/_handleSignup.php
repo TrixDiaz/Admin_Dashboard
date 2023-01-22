@@ -29,7 +29,7 @@
         elseif(!$user_exists)
         {
             $hash = password_hash($password, PASSWORD_DEFAULT);
-            $sql = "INSERT INTO `users` (`user_name`, `user_fullname`, `user_password`, `role`, `user_created`) VALUES ('($username)', '($fullName)', '$hash', '$role',current_timestamp());";
+            $sql = "INSERT INTO `users` (`user_name`, `user_fullname`, `user_password`, `role`, `user_created`) VALUES ('$username', '$fullName', '$hash', '$role',current_timestamp());";
 
             $result = mysqli_query($conn, $sql);
             

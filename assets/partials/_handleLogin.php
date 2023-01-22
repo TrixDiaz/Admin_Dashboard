@@ -21,13 +21,22 @@
             $hash = $row['user_password'];
             if(password_verify($password, $hash))
             {
+
                 // Login Sucessfull
                 session_start();
                 $_SESSION["loggedIn"] = true;
                 $user = $_SESSION["user_id"] = $row["user_id"];
-
-                header("location: ../../admin/dashboard.php?id=$user");
-                exit;
+                if($row['role']=='ADMIN')
+                {
+                    header("location: ../../admin/dashboard.php?id=$user");
+                    exit;
+                }
+                elseif($row['role']=='USER')
+                {
+                    header("location: ../../user/dashboard.php?id=$user");
+                    exit;
+                }
+               
             }
                 
                  // Login failure
