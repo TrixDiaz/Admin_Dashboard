@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `test-admin-dashboard`
+-- Database: `test_admin_dashboard`
 --
 
 -- --------------------------------------------------------
@@ -32,6 +32,7 @@ CREATE TABLE `users` (
   `user_fullname` varchar(250) NOT NULL,
   `user_name` varchar(250) NOT NULL,
   `user_password` varchar(250) NOT NULL,
+  `role` varchar(5)NOT NULL,
   `user_created` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
