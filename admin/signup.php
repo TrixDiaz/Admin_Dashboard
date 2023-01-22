@@ -8,10 +8,14 @@ require '../assets/partials/_admin-check.php';
 
 <!-- sidebar main content  -->
 <div class="col py-3">
-    <nav>
+    <nav class="mb-3 mx-4">
         <div class="d-flex justify-content-between mb-3">
-        <div class="h3">Register New Account</div>
-        <a href="../admin/signup.php" class="btn btn-info h3"><i class="bi bi-arrow-clockwise"></i></a>
+            <div class="badge bg-primary text-uppercase"><?php date_default_timezone_set('Asia/Manila'); ?> Current Date: <?php echo date('y-m-d');?></div>
+            <div class="badge bg-primary text-uppercase"><?php date_default_timezone_set('Asia/Manila'); ?> Current Date: <?php echo date('h:i:s a');?></div>
+        </div>
+         <div class="d-flex justify-content-between mb-3">
+            <div class="h3">Register New Account</div>
+            <a href="../admin/dashboard.php?id=$user" class="btn btn-info h3"><i class="bi bi-arrow-clockwise"></i></a>
         </div>
     </nav>
             
