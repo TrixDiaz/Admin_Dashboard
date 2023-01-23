@@ -12,7 +12,7 @@
         // var_export($_POST);
         // echo "</pre>";
 
-        $fullName = $_POST["firstName"] . " " . $_POST["lastName"];
+        $fullName = $_POST["lastName"] . " " . $_POST["firstName"];
         $username = $_POST["username"];
         $password = $_POST["password"];
         $password_confirmation = $_POST["password_confirmation"];  

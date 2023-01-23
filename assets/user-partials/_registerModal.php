@@ -8,22 +8,32 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-          <div class="mb-2 mt-2">
-                    <label for="text" class="form-label">Firstname::</label>
-                    <input type="text" class="form-control text-uppercase" id="firstName" placeholder="Enter Firstname" name="firstName" required>
-            </div>
+           
             <div class="mb-2 mt-2">
-                    <label for="text" class="form-label">Username:</label>
+                    <label for="text" class="form-label">Last name:</label>
                     <input type="text" class="form-control text-uppercase" id="lastName" placeholder="Enter Lastname" name="lastName" required>
             </div>
+
+            <div class="mb-2 mt-2">
+                    <label for="text" class="form-label">First name::</label>
+                    <input type="text" class="form-control text-uppercase" id="firstName" placeholder="Enter Firstname" name="firstName" required>
+            </div>
+
+            <div class="mb-2 mt-2">
+                    <label for="text" class="form-label">Middle name::</label>
+                    <input type="text" class="form-control text-uppercase" id="middleName" placeholder="Optional" name="middleName">
+            </div>
+
             <div class="mb-2 mt-2">
                     <label for="text" class="form-label">Username:</label>
                     <input type="text" class="form-control text-capitalize" id="username" placeholder="Enter Username" name="username" required>
             </div>
+
             <div class="">
                     <label for="password" class="form-label">Password:</label>
                     <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
             </div>
+
             <div class="">
                     <label for="password_confirmation" class="form-label">Password:</label>
                     <input type="password" class="form-control" id="password_confirmation"  name="password_confirmation" placeholder="Enter Confirm password" required>
