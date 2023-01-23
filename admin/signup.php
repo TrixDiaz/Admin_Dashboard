@@ -61,10 +61,10 @@ require '../assets/partials/_admin-check.php';
                                     </div>
                                     <div class="row d-flex justify-content-around">
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-0 mb-4">
-                                                <input type="text" class="form-control text-uppercase" name="firstName" placeholder="First Name*" required>
+                                                <input type="text" class="form-control text-uppercase" name="firstName" placeholder="First Name*" onkeypress="return lettersOnly(event)" required>
                                             </div>
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-0 mb-4">
-                                                <input type="text" class="form-control text-uppercase" name="lastName" placeholder="Last Name*" required>
+                                                <input type="text" class="form-control text-uppercase" name="lastName" placeholder="Last Name*" onkeypress="return lettersOnly(event)" required>
                                             </div>
                                             
                                             <div class="col-auto col-sm-12 col-md-8 col-xl-6 mx-sm-4 mb-4">

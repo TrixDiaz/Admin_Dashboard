@@ -11,17 +11,17 @@
            
             <div class="mb-2 mt-2">
                     <label for="text" class="form-label">Last name:</label>
-                    <input type="text" class="form-control text-uppercase" id="lastName" placeholder="Enter Lastname" name="lastName" required>
+                    <input type="text" class="form-control text-uppercase" id="lastName" placeholder="Enter Lastname" name="lastName" onkeypress="return lettersOnly(event)" required>
             </div>
 
             <div class="mb-2 mt-2">
                     <label for="text" class="form-label">First name::</label>
-                    <input type="text" class="form-control text-uppercase" id="firstName" placeholder="Enter Firstname" name="firstName" required>
+                    <input type="text" class="form-control text-uppercase" id="firstName" placeholder="Enter Firstname" name="firstName" onkeypress="return lettersOnly(event)" required>
             </div>
 
             <div class="mb-2 mt-2">
                     <label for="text" class="form-label">Middle name::</label>
-                    <input type="text" class="form-control text-uppercase" id="middleName" placeholder="Optional" name="middleName">
+                    <input type="text" class="form-control text-uppercase" id="middleName" placeholder="Optional" name="middleName" onkeypress="return lettersOnly(event)">
             </div>
 
             <div class="mb-2 mt-2">
@@ -51,3 +51,16 @@
       </div>
     </div>
 </form>
+
+<script type="text/javascript">
+function lettersOnly() 
+{
+            var charCode = event.keyCode;
+
+            if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123) || charCode == 8)
+
+                return true;
+            else
+                return false;
+}
+</script>
