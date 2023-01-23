@@ -9,8 +9,8 @@ include '../assets/partials/_functions.php';
 <div class="col py-3">
     <nav class="mb-3 mx-4">
         <div class="d-flex justify-content-between mb-3">
-            <div class="badge bg-primary text-uppercase"><?php date_default_timezone_set('Asia/Manila'); ?> Current Date: <?php echo date('y-m-d');?></div>
-            <div class="badge bg-primary text-uppercase"><?php date_default_timezone_set('Asia/Manila'); ?> Current Date: <?php echo date('h:i:s a');?></div>
+            <div class="badge bg-primary text-uppercase" id="currentTimeDate"></div>
+            <div class="badge bg-primary text-uppercase"><?php date_default_timezone_set('Asia/Manila'); echo date('F j, Y'); ?></div>
         </div>
          <div class="d-flex justify-content-between mb-3">
             <div class="h3">Home</div>
@@ -120,6 +120,7 @@ include '../assets/partials/_functions.php';
 </div>
 
 <?php 
+include '../assets/scripts/admin.php';
 include '../assets/scripts/index.php';
 include '../assets/partials/_foot.php'; 
 ?>

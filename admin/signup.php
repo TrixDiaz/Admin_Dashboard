@@ -10,8 +10,8 @@ require '../assets/partials/_admin-check.php';
 <div class="col py-3">
     <nav class="mb-3 mx-4">
         <div class="d-flex justify-content-between mb-3">
-            <div class="badge bg-primary text-uppercase"><?php date_default_timezone_set('Asia/Manila'); ?> Current Date: <?php echo date('y-m-d');?></div>
-            <div class="badge bg-primary text-uppercase"><?php date_default_timezone_set('Asia/Manila'); ?> Current Date: <?php echo date('h:i:s a');?></div>
+        <div class="badge bg-primary text-uppercase" id="currentTimeDate"></div>
+            <div class="badge bg-primary text-uppercase"><?php date_default_timezone_set('Asia/Manila'); echo date('F j, Y'); ?></div>
         </div>
          <div class="d-flex justify-content-between mb-3">
             <div class="h3">Register New Account</div>
@@ -93,11 +93,12 @@ require '../assets/partials/_admin-check.php';
 </section>
             <?php include '../assets/partials/_footer.php'; ?>
 </div>
+
 <!-- sidebar end div  -->
     </div> 
 </div>
 
-
-
-
-<?php include '../assets/partials/_foot.php'; ?>
+<?php 
+include '../assets/scripts/admin.php';
+include '../assets/partials/_foot.php';
+ ?>
