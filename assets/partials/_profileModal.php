@@ -3,35 +3,37 @@
  include '../assets/partials/_urlName.php';
 ?>
 <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Profile</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-                    <div class="card">
+                    <div class="card shadow">
                         <div class="card-body">
                             <div class="card-text">
-                               <div class="col-auto">
-                                    <strong><h4><?php echo $result['user_fullname']; ?></h4></strong>
+                               <div class="col-auto my-3">
+                                    <strong><h4><?php echo $result['user_fullname']; ?></h4></strong> 
+                                    <span class="badge bg-info text-uppercase"><?php echo $result['role']; ?></span>
                                </div>
                                <div class="col-auto mb-2">
                                         <div class="row">
-                                            <div class="col-6">
+                                            <div class="col-4">
                                                 <span>Age</span>
                                             </div>
-                                            <div class="col-6">
-                                                <span>Contact number</span>
+                                            <div class="col-4">
+                                                <span><?php echo "Birth Date " . "<br>" . $result['birth_date']; ?></span>
+                                            </div>
+                                            <div class="col-4">
+                                                <span><?php echo "Contact Number" . "<br>" .  "<strong>+63</strong> " . $result['contact_number']; ?></span>
                                             </div>
                                         </div>
                                </div>
-                               <div class="col-auto">
+                               <div class="col-auto my-3">
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                </div>
-                               <div class="col-auto">
-                               <span class="badge bg-info text-uppercase"><?php echo $result['role']; ?></span>
-                               </div>
+                               
                             </div>
                         </div>
                     </div>
