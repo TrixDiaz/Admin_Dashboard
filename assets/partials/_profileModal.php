@@ -83,15 +83,15 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-         <input type="text" value="Username" class="form-control mb-2" disabled>
-              <div class="input-group mb-2">
+         <input type="text" value="<?php echo $result['user_name']; ?>" class="form-control mb-3 mt-3" disabled>
+              <div class="input-group mb-3 mt-3">
                   <span class="input-group-text">First & last name</span>
                   <input type="text" aria-label="First name" placeholder="First Name" class="form-control" > 
                   <input type="text" aria-label="Last name" placeholder="Last Name" class="form-control">
             </div>
-            <div class="input-group">
+            <div class="input-group mt-3 mb-3">
                 <input type="date" class="form-control">
-                <input type="text" value="Contact Number">
+                <input type="text" class="form-control" value="Contact Number">
             </div>
            
       </div>
