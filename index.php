@@ -166,5 +166,4 @@
 
 <?php include './assets/partials/_footer.php'; ?>
 <?php include './assets/partials/_loginModal.php'; ?>
-<?php include './assets/scripts/index.php' ?>
 <?php include './assets/partials/_foot.php'; ?>

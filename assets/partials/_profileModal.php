@@ -54,7 +54,18 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-            Display this for old password new password and confirm password
+          <div class="mb-3 mt-3">
+              <label for="old" class="form-label">Old Pasword</label>
+              <input type="password" class="form-control" id="oldpassword" placeholder="Enter Old Password" name="oldpassword">
+         </div>
+          <div class="mb-3 mt-3">
+                <label for="new" class="form-label">New Pasword</label>
+                <input type="password" class="form-control" id="newpassword" placeholder="Enter New Password" name="newpassword">
+          </div>
+          <div class="mb-3 mt-3">
+                <label for="confirm" class="form-label">Confirm Pasword</label>
+                <input type="password" class="form-control" id="newpassword" placeholder="Enter Confirm Password" name="confirmpassword">
+          </div>
       </div>
       <div class="modal-footer">
         <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
@@ -72,7 +83,17 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-            Display Here for the Update Profile
+         <input type="text" value="Username" class="form-control mb-2" disabled>
+              <div class="input-group mb-2">
+                  <span class="input-group-text">First & last name</span>
+                  <input type="text" aria-label="First name" placeholder="First Name" class="form-control" > 
+                  <input type="text" aria-label="Last name" placeholder="Last Name" class="form-control">
+            </div>
+            <div class="input-group">
+                <input type="date" class="form-control">
+                <input type="text" value="Contact Number">
+            </div>
+           
       </div>
       <div class="modal-footer">
         <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
