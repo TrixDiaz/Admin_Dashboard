@@ -12,7 +12,9 @@
         // var_export($_POST);
         // echo "</pre>";
 
-        $fullName = $_POST["lastName"] . " " . $_POST["firstName"];
+        $lastName = $_POST["lastName"];
+        $firstname = $_POST["firstName"];
+        $middlename = $_POST["middleName"];
         $username = $_POST["username"];
         $password = $_POST["password"];
         $password_confirmation = $_POST["password_confirmation"];  
@@ -29,7 +31,7 @@
         elseif(!$user_exists)
         {
             $hash = password_hash($password, PASSWORD_DEFAULT);
-            $sql = "INSERT INTO `users` (`user_name`, `user_fullname`, `user_password`, `role`, `user_created`) VALUES ('$username', '$fullName', '$hash', '$role',current_timestamp());";
+            $sql = "INSERT INTO `users` (`user_name`, `user_lastname`, `user_firstname`, `user_middlename`, `user_password`, `role`, `user_created`) VALUES ('$username', '$lastName', '$firstName', '$middleName', '$hash', '$role',current_timestamp());";
 
             $result = mysqli_query($conn, $sql);
             

@@ -7,7 +7,7 @@ include '../assets/partials/_functions.php';
         
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand text-capitalize mx-3 h3" href="#"><?php echo $result['user_fullname']; ?></a>
+    <a class="navbar-brand text-capitalize mx-3 h3" href="#"><?php echo $result['user_lastname']; ?></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -51,6 +51,5 @@ include '../assets/partials/_functions.php';
 </nav>
 
 <?php 
-include '../assets/scripts/index.php';
 include '../assets/partials/_foot.php'; 
 ?>
