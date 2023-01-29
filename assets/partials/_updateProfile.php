@@ -27,10 +27,9 @@ if(!$conn)
         }
         else
         {
-            $sql = "UPDATE `users` SET user_lastname = '$lastName', user_firstname = '$firstName', user_middlename = '$middleName'  WHERE user_name='$username'";
-            $result = mysqli_query($conn,$sql);
+            $sql = "UPDATE `users` SET user_lastname = '$lastName', user_firstname = '$firstName', user_middlename = '$middleName' , contact_number = '$contact', birth_date = '$birthdate'    WHERE user_name='$username'";
 
-            if($result)
+            if(mysqli_query($conn, $sql))
             {
                 header("location: ../../admin/dashboard.php?success=Profile Successfully Update");
             }
