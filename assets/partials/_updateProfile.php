@@ -21,14 +21,21 @@ if(!$conn)
         {
             header("location: ../../admin/dashboard.php?error= Please Provide Last name and First name in order to be successfully update your profle.");
         }
-        elseif(empty($_POST['birthdate']) && empty($_POST['contact_number']))
+        if(empty($_POST['birthdate']) && empty($_POST['contact_number']))
         {
             header("location: ../../admin/dashboard.php?error= Please Provide Birth Date and Contact Number in order to be successfully update your profle.");
         }
         else
         {
             $sql = "UPDATE `users` SET user_lastname = '$lastName', user_firstname = '$firstName', user_middlename = '$middleName'  WHERE user_name='$username'";
-            header("location: ../../admin/dashboard.php?success=Profile Successfully Update");
+            $result = mysqli_query($conn,$sql);
+
+            if($result)
+            {
+                header("location: ../../admin/dashboard.php?success=Profile Successfully Update");
+            }
+
+           
         }
     }
 

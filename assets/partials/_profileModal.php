@@ -79,11 +79,11 @@
         <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Update Profile</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form action="../partials/_updateProfile.php" method="POST">
+      <form action="../assets/partials/_updateProfile.php" method="POST">
         <div class="modal-body">
           <div class="mb-3">
             <label for="username" class="form-label"><strong>Username</strong></label>
-            <input type="text" value="<?php echo $result['user_name']; ?>" class="form-control" id="username" disabled>
+            <input type="text" value="<?php echo $result['user_name']; ?>" class="form-control" name="username" id="username" disabled>
           </div>
           <div class="mb-3">
               <label for="fullname" class="form-label"><strong>Full Name</strong></label>
@@ -107,7 +107,7 @@
         <hr>
         <div class="mx-3 mb-3" align="end">
         <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
-          <button class="btn btn-success" type="submit" name="updateProfile">Update Profile</button>
+        <button class="btn btn-success" type="submit" name="updateProfile">Update Profile</button>
         </div>
       </form>
       

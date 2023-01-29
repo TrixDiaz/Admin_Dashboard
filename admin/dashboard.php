@@ -7,8 +7,10 @@ include '../assets/partials/_functions.php';
 ?>
 <!-- sidebar main content  -->
 
-            <?php if (isset($_GET['error'])) { ?>
-                <div class="container">
+<div class="col py-3">
+
+        <?php if (isset($_GET['error'])) { ?>
+                <div class="mx-3">
                     <div x-transition.leave.duration.800ms x-data="{show : true}" x-show="show" x-init="setTimeout(()=> show = false, 3000)"class="alert alert-danger alert-dismissible fade show" role="alert"> 
                      <?php echo $_GET['error']; ?>  
                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -17,15 +19,14 @@ include '../assets/partials/_functions.php';
             <?php } ?>
 
             <?php if (isset($_GET['success'])) { ?>
-                <div class="container">
+                <div class="mx-3">
                     <div x-transition.leave.duration.800ms x-data="{show : true}" x-show="show" x-init="setTimeout(()=> show = false, 3000)"class="alert alert-success alert-dismissible fade show" role="alert"> 
                      <?php echo $_GET['success']; ?>  
                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 </div>
             <?php } ?>
-            
-<div class="col py-3">
+
     <nav class="mb-3 mx-4">
         <div class="d-flex justify-content-between mb-3">
             <div class="badge bg-primary text-uppercase" id="currentTimeDate"></div>
@@ -140,6 +141,7 @@ include '../assets/partials/_functions.php';
 
 <?php 
 include '../assets/scripts/admin.php';
-include '../assets/scripts/index.php';
 include '../assets/partials/_foot.php'; 
 ?>
+
+
