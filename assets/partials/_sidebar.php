@@ -79,10 +79,9 @@
                         <span class="d-none d-sm-inline mx-1"><?php echo $result['user_name']; ?></span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" role="button">Change Password</a></li>
                         <li><a class="dropdown-item" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Profile</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
+                        <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="../assets/partials/_logout.php">Sign out</a></li>
                     </ul>
                 </div>

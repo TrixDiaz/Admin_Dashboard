@@ -21,7 +21,7 @@
                                <div class="col-auto mb-2">
                                         <div class="row">
                                             <div class="col-4">
-                                                <span><span><?php echo "<strong>Age</strong>" . "<br>" . $result['birth_date']; ?></span></span>
+                                                <span><span><?php echo "<strong>Age</strong>" . "<br>" . $result['age']; ?></span></span>
                                             </div>
                                             <div class="col-4">
                                                 <span><?php echo "<strong>Birth Date</strong>" . "<br>" . $result['birth_date']; ?></span>
