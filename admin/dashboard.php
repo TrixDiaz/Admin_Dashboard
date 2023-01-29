@@ -34,7 +34,7 @@ include '../assets/partials/_functions.php';
         </div>
          <div class="d-flex justify-content-between mb-3">
             <div class="h3">Home</div>
-            <a href="../admin/dashboard.php?id=$user" class="btn btn-info h3"><i class="bi bi-arrow-clockwise"></i></a>
+            <a href="../admin/dashboard.php" class="btn btn-info h3"><i class="bi bi-arrow-clockwise"></i></a>
         </div>
     </nav>
         <div class="row mb-3" align="center">

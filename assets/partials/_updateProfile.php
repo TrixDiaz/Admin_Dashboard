@@ -14,7 +14,7 @@ if(!$conn)
         $lastName = $_POST["lastName"];
         $firstname = $_POST["firstName"];
         $middlename = $_POST["middleName"];
-        $contact = $_POST["contact_number"];
+        $contact = $_POST["contact"];
         $birthdate = $_POST["birthdate"];
 
         if(empty($_POST['lastName']) && empty($_POST['firstName']))
@@ -27,14 +27,12 @@ if(!$conn)
         }
         else
         {
-            $sql = "UPDATE `users` SET user_lastname = '$lastName', user_firstname = '$firstName', user_middlename = '$middleName' , contact_number = '$contact', birth_date = '$birthdate'    WHERE user_name='$username'";
+            $sql = "UPDATE `users` SET user_lastname = '$lastName', user_firstname = '$firstname', user_middlename = '$middlename',  contact_number = '$contact', birth_date = '$birthdate' WHERE user_name='$username'";
 
             if(mysqli_query($conn, $sql))
             {
                 header("location: ../../admin/dashboard.php?success=Profile Successfully Update");
             }
-
-           
         }
     }
 

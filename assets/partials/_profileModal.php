@@ -83,15 +83,15 @@
         <div class="modal-body">
           <div class="mb-3">
             <label for="username" class="form-label"><strong>Username</strong></label>
-            <input type="text" value="<?php echo $result['user_name']; ?>" class="form-control" name="username" id="username" disabled>
+            <input type="text" value="<?php echo $result['user_name']; ?>" class="form-control bg-secondary bg-opacity-50" name="username" id="username" readonly>
           </div>
           <div class="mb-3">
               <label for="fullname" class="form-label"><strong>Full Name</strong></label>
                 <div class="input-group">
                     <span class="input-group-text" id="fullname"><?php echo $result['user_lastname']; ?> <?php echo $result['user_firstname']; ?> <?php echo $result['user_middlename']; ?></span>
-                    <input type="text" aria-label="First name" placeholder="First Name" class="form-control" > 
-                    <input type="text" aria-label="Last name" placeholder="Last Name" class="form-control">
-                    <input type="text" aria-label="Middle name" placeholder="Middle Name" class="form-control">
+                    <input type="text" aria-label="First name" placeholder="First Name" name="firstName" class="form-control" > 
+                    <input type="text" aria-label="Last name" placeholder="Last Name" name="lastName" class="form-control">
+                    <input type="text" aria-label="Middle name" placeholder="Middle Name" name="middleName" class="form-control">
               </div>
           </div>
               <div class="mb-3">
@@ -100,7 +100,7 @@
               <span class="input-group-text" id="birthdate"><?php echo $result['birth_date']; ?></span>
                 <input type="date" class="form-control" id="" name="birthdate">
                 <span class="input-group-text">+63 <?php echo $result['contact_number']; ?></span>
-                <input type="text" class="form-control" placeholder="Contact Number">
+                <input type="text" class="form-control" name="contact" placeholder="Contact Number">
               </div>
               </div>
         </div>
