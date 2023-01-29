@@ -24,7 +24,7 @@ function exist_user($conn, $username)
         {
             return false;
         }
-        
-
 }
+
+
 ?>

@@ -15,7 +15,7 @@
                         <div class="card-body">
                             <div class="card-text">
                                <div class="col-auto my-3">
-                                    <strong><h4><?php echo $result['user_lastname']; ?></h4></strong> 
+                                    <strong><h4><?php echo $result['user_lastname']; ?> <?php echo $result['user_firstname']; ?></h4></strong> 
                                     <span class="badge bg-info text-uppercase"><?php echo $result['role']; ?></span>
                                </div>
                                <div class="col-auto mb-2">
@@ -79,34 +79,38 @@
         <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Update Profile</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <div class="mb-3">
-          <label for="username" class="form-label"><strong>Username</strong></label>
-          <input type="text" value="<?php echo $result['user_name']; ?>" class="form-control" id="username" disabled>
-        </div>
-        <div class="mb-3">
-             <label for="fullname" class="form-label"><strong>Full Name</strong></label>
+      <form action="../partials/_updateProfile.php" method="POST">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="username" class="form-label"><strong>Username</strong></label>
+            <input type="text" value="<?php echo $result['user_name']; ?>" class="form-control" id="username" disabled>
+          </div>
+          <div class="mb-3">
+              <label for="fullname" class="form-label"><strong>Full Name</strong></label>
+                <div class="input-group">
+                    <span class="input-group-text" id="fullname"><?php echo $result['user_lastname']; ?> <?php echo $result['user_firstname']; ?> <?php echo $result['user_middlename']; ?></span>
+                    <input type="text" aria-label="First name" placeholder="First Name" class="form-control" > 
+                    <input type="text" aria-label="Last name" placeholder="Last Name" class="form-control">
+                    <input type="text" aria-label="Middle name" placeholder="Middle Name" class="form-control">
+              </div>
+          </div>
+              <div class="mb-3">
+              <label for="birthdate" class="form-label"><strong>Birthdate & Contact Number</strong></label>
               <div class="input-group">
-                  <span class="input-group-text" id="fullname"><?php echo $result['user_lastname']; ?> <?php echo $result['user_firstname']; ?> <?php echo $result['user_middlename']; ?></span>
-                  <input type="text" aria-label="First name" placeholder="First Name" class="form-control" > 
-                  <input type="text" aria-label="Last name" placeholder="Last Name" class="form-control">
-                  <input type="text" aria-label="Middle name" placeholder="Middle Name" class="form-control">
-            </div>
+              <span class="input-group-text" id="birthdate"><?php echo $result['birth_date']; ?></span>
+                <input type="date" class="form-control" id="" name="birthdate">
+                <span class="input-group-text">+63 <?php echo $result['contact_number']; ?></span>
+                <input type="text" class="form-control" placeholder="Contact Number">
+              </div>
+              </div>
         </div>
-            <div class="mb-3">
-            <label for="birthdate" class="form-label"><strong>Birthdate & Contact Number</strong></label>
-            <div class="input-group">
-             <span class="input-group-text" id="birthdate"><?php echo $result['birth_date']; ?></span>
-              <input type="date" class="form-control" id="contact">
-              <span class="input-group-text">+63 <?php echo $result['contact_number']; ?></span>
-              <input type="text" class="form-control" placeholder="Contact Number">
-            </div>
-            </div>
-      </div>
-      <div class="modal-footer">
+        <hr>
+        <div class="mx-3 mb-3" align="end">
         <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
-        <button class="btn btn-success" type="submit" name="changePass">Update Profile</button>
-      </div>
+          <button class="btn btn-success" type="submit" name="updateProfile">Update Profile</button>
+        </div>
+      </form>
+      
     </div>
   </div>
 </div>
