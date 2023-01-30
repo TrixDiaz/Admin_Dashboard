@@ -36,4 +36,33 @@ if(!$conn)
         }
     }
 
+    if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["changePassword"]))
+    {
+        $oldpassword = $_POST['oldpassword'];
+        $password = $_POST['password'];
+        $newpassword = $_POST['newpassword'];
+    }
+
+    if(empty($_POST['oldpassword']) && empty($_POST['password']) && empty($_POST['password']) )
+    {
+        header("location: ../../admin/dashboard.php?error=Please Fill all the field.");
+    }
+    elseif($_POST['password'] != $_POST['newpassword'] )
+    {
+        header("location: ../../admin/dashboard.php?error=Password created is not match.");
+    }
+    else
+    {
+        $sql = "SELECT * password FROM `users` WHERE user_name='$username' ";
+        $result = mysqli_query($conn, $sql); 
+        if(['password'] != $result)
+        {
+            header("location: ../../admin/dashboard.php?error=Old Password incorrect.");
+        }
+        else
+        {
+            header("location: ../../admin/dashboard.php?success=Password Successfully Change");
+
+        }
+    }
 ?>

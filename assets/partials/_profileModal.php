@@ -50,24 +50,26 @@
         <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Change Password</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-          <div class="mb-3 mt-3">
-              <label for="old" class="form-label">Old Pasword</label>
-              <input type="password" class="form-control" id="oldpassword" placeholder="Enter Old Password" name="oldpassword">
-         </div>
-          <div class="mb-3 mt-3">
-                <label for="new" class="form-label">New Pasword</label>
-                <input type="password" class="form-control" id="newpassword" placeholder="Enter New Password" name="newpassword">
+     <form action="../assets/partials/_updateProfile.php" method="POST">
+        <div class="modal-body">
+            <div class="mb-3 mt-3">
+                <label for="old" class="form-label">Old Pasword</label>
+                <input type="password" class="form-control" id="oldpassword" placeholder="Enter old Password" name="oldpassword">
           </div>
-          <div class="mb-3 mt-3">
-                <label for="confirm" class="form-label">Confirm Pasword</label>
-                <input type="password" class="form-control" id="newpassword" placeholder="Enter Confirm Password" name="confirmpassword">
+            <div class="mb-3 mt-3">
+                  <label for="new" class="form-label">New Pasword</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter New Password" name="password">
+            </div>
+            <div class="mb-3 mt-3">
+                  <label for="confirm" class="form-label">Confirm Pasword</label>
+                  <input type="password" class="form-control" id="newpassword" placeholder="Enter Confirm Password" name="newpassword">
+            </div>
+        </div>
+        <div class="mx-3 mb-3" align="end">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+            <button class="btn btn-success" type="submit" name="changePassword">Update Profile</button>
           </div>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
-        <button class="btn btn-success" type="submit" name="changePass">Change Password</button>
-      </div>
+     </form>
     </div>
   </div>
 </div>
@@ -106,8 +108,8 @@
         </div>
         <hr>
         <div class="mx-3 mb-3" align="end">
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
-        <button class="btn btn-success" type="submit" name="updateProfile">Update Profile</button>
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+          <button class="btn btn-success" type="submit" name="updateProfile">Update Profile</button>
         </div>
       </form>
       
